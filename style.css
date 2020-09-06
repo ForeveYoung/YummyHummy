@@ -1,0 +1,138 @@
+#background img{
+    width: 100%;
+}
+
+#background{
+    margin: auto -8px auto -8px;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@font-face {
+    font-family: LongCang-Regular; 
+    src: url(fonts/LongCang-Regular.ttf); 
+}
+
+.navigation{
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr 1fr;
+    background: burlywood;
+    padding: 20px;
+    padding-left: 10%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2; 
+}
+
+.navigation a{
+    text-decoration: none;
+    color: black;
+    -webkit-transition: 2s ease;
+    transition: all 0.5s ease-in-out;
+}
+
+#home, #recipes, #contact{
+    padding-top: 15px;
+    font-weight: bolder;
+}
+
+.title{
+    font-size: xx-large;
+}
+
+a:hover{
+    transform: scale(1px);
+    color: wheat;
+    transition: all 0.5s ease-in-out;
+}
+
+#bg2 {
+    height: 150px; 
+    width: 100%;
+    margin-top: -90px;
+    position: relative;
+    }
+    #bg2:before, 
+    #bg2:after {
+    content: "";
+    height: 100%; 
+    width: 50%;
+    position: absolute; 
+    top: 0;
+    background:white;
+    }
+    #bg2:before {
+    left: 0;
+    transform: skew(0deg, 10deg);
+    }
+    #bg2:after {
+    right: 0;
+    transform: skew(0deg, -10deg);
+}
+
+.text{
+    display: grid;
+    justify-items: center;
+    margin-top: -600px;
+}
+
+.text :first-child{
+    font-weight: bold;
+    font-size: 100px;
+    font-family: LongCang-Regular;
+}
+
+.text :last-child{
+    font-weight: bold;
+    margin: -90px 0px 0px -100px;
+}
+
+#transition{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.res-title-box{
+    display: grid;
+    justify-items: center;
+    margin-top: 300px;
+    position: relative;
+    z-index: 1;
+}
+
+.res-title{
+    font-weight: bolder;
+    font-size: x-large;
+    text-decoration-line: underline;
+    
+}
+
+.recipes-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px auto 500px auto;
+    justify-items: center;
+    width: 80%;
+}
+
+.recipes-container div{
+    height: 150px;
+    width: 500px;
+    margin-top: 30px;
+    border: 2px solid burlywood;
+    border-radius: 20px;
+}
+
+
+#main-footer{
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: rgb(0, 0, 0);
+    margin: auto -8px -8px -8px;
+    bottom: 0;
+}
