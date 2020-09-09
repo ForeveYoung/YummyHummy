@@ -7,7 +7,8 @@
 }
 
 body{
-    font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -36,8 +37,8 @@ body{
 }
 
 #home, #recipes, #contact{
-    padding-top: 15px;
-    font-weight: bolder;
+  font-weight: bold;
+  padding-top: 10px;
 }
 
 .title{
@@ -74,23 +75,6 @@ a:hover{
     transform: skew(0deg, -10deg);
 }
 
-.text{
-    display: grid;
-    justify-items: center;
-    margin-top: -600px;
-}
-
-.text :first-child{
-    font-weight: bold;
-    font-size: 100px;
-    font-family: LongCang-Regular;
-}
-
-.text :last-child{
-    font-weight: bold;
-    margin: -90px 0px 0px -100px;
-}
-
 #transition{
     margin-left: -8px;
     margin-right: -8px;
@@ -99,7 +83,6 @@ a:hover{
 .res-title-box{
     display: grid;
     justify-items: center;
-    margin-top: 300px;
     position: relative;
     z-index: 1;
 }
