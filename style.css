@@ -1,5 +1,6 @@
 #background img{
     width: 100%;
+    box-sizing: border-box;
 }
 
 a{
@@ -144,6 +145,28 @@ body{
     bottom: 0;
 }
 
+footer{
+  background: black;
+  color: azure;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 30px;
+  width: 100%;
+}
+
+.footer-title{
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.block1, .block2{
+  margin-left: 60px;
+}
+
+footer img{
+  width: 15px;
+}
+
 #toggle{
   display: none;
 }
@@ -186,6 +209,12 @@ a {
 .home, .recipes, .cont{
   font-weight: bold;
   padding-top: 0px;
+}
+
+footer{
+  display: grid;
+  grid-template-columns: 1fr;
+  box-sizing: border-box;
 }
 
 /* BUTTON LOGIC */
@@ -388,5 +417,3 @@ a {
     padding: 20px 10px;
   }
 }
-
-
