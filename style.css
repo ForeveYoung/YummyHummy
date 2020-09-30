@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 #background img{
   width: 100%;
   box-sizing: border-box;
@@ -10,9 +16,6 @@ a{
 
 body{
   font-family: 'Courier New', Courier, monospace;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
 }
 
@@ -40,7 +43,7 @@ body{
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2; 
+  z-index: 5; 
   box-shadow: 0px 15px 24px -21px black; 
 }
 
@@ -64,6 +67,7 @@ body{
   height: 150px; 
   width: 100%;
   position: relative;
+  margin-top: -70px;
 }
 
 #bg2:before, 
@@ -78,12 +82,12 @@ body{
 
 #bg2:before {
   left: 0;
-  transform: skew(0deg, 10deg);
+  transform: skew(0deg, 5deg);
 }
 
 #bg2:after {
   right: 0;
-  transform: skew(0deg, -10deg);
+  transform: skew(0deg, -5deg);
 }
 
 .res-title-box{
@@ -102,7 +106,7 @@ body{
 .recipes-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 0px auto 0px auto;
+  margin: 30px auto 0px auto;
   justify-items: center;
   width: 80%;
 }
@@ -130,13 +134,15 @@ body{
 
 .recipes-container div p{
   font-size: larger;
+  margin-top: 20px;
 }
 
 .about-shef{
   box-sizing: border-box;
   width: 80%;
   background-color: burlywood;;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
+  margin-top: 100px;
   padding: 40px;
   display: flex;
   left: 0;
@@ -150,16 +156,61 @@ body{
 .chef-text{
   width: 500px;
   margin-left: 50px;
+  margin-top: 50px;
 }
 
 .chef-text h1{
-  line-height: 60px;
+  line-height: 100px;
   font-size: 50px;
   letter-spacing: 3px;
 }
 
 .chef-text p{
   line-height: 30px;
+}
+
+.statics{
+  box-sizing: border-box;
+  background-color: burlywood;;
+  margin-bottom: 200px;
+  padding: 40px;
+  display: grid;
+  width: 80%;
+  grid-template-columns: 3fr 1fr;
+  float: right;
+  position: relative;
+  right: 0;
+  box-shadow: 0px 15px 30px 15px rgba(0, 0, 0, 0.39); 
+}
+
+.box{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-right: 20px;
+}
+
+.foods, .customers, .exp, .last{
+  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.20); 
+  background-color: rgb(238, 196, 142);
+  margin: 30px;
+  padding: 10px;
+  display: grid;
+  justify-items: center;
+}
+
+.statics .number{
+  font-weight: bolder;
+  font-size: 40px;
+  padding-top: 25px; 
+}
+.statics p{
+  letter-spacing: 0.3px;
+  margin-top: -15px;
+  text-align: center;
+}
+
+.statics img{
+  height: 450px;
 }
 
 #main-footer{
@@ -182,6 +233,7 @@ footer{
 .footer-title{
   font-weight: bolder;
   font-size: larger;
+  line-height: 50px;
 }
 
 .block1, .block2{
@@ -204,13 +256,13 @@ footer img{
   body{
     overflow-x: hidden;
   }  
-  
+
   #bg2{
     display: none;
   }
-
+  
 .navigation{
-  height: 12px;
+  height: 60px;
 }
 
 a {
@@ -234,12 +286,14 @@ a {
 .home, .recipes, .cont{
   font-weight: bold;
   padding-top: 0px;
+
 }
 
 footer{
   display: grid;
   grid-template-columns: 1fr;
   box-sizing: border-box;
+  width: 100%;
 }
 
 /* BUTTON LOGIC */
@@ -327,7 +381,6 @@ footer{
   cursor: pointer;
   border-radius: 100%;
   transition: 0.6s;
-
 }
 
 .button-toggle:hover {
@@ -428,12 +481,26 @@ footer{
   transition: 0.5s;
 }
 
-.about-shef{
+.about-shef, .statics{
   display: grid;
   grid-template-columns: 1fr;
-}
 
 }
+
+.sattics{
+  width: 100%;
+}
+
+.statics .number{
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.statics p{
+  text-align: center;
+}
+
+
 
 @media(max-width: 1330px){
   .recipes-container{
@@ -445,4 +512,75 @@ footer{
     width: 400px;
     padding: 20px 10px;
   }
+}
+
+@media(max-width: 1000px){
+  .about-shef{
+    box-sizing: border-box;
+    width: 80%;
+    background-color: burlywood;;
+    margin-bottom: 200px;
+    padding: 40px;
+    display: flex;
+    left: 0;
+    box-shadow: 0px 15px 30px 15px rgba(0, 0, 0, 0.39); 
+  }
+  
+  .about-shef img{
+    height: 500px;
+  }
+  
+  .chef-text{
+    width: 500px;
+    margin-left: 50px;
+  }
+  
+  .chef-text h1{
+    line-height: 30px;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  
+  .chef-text p{
+    line-height: 20px;
+  }
+
+    .about-shef{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 450px;
+  }
+  
+  .chef-text{
+    width: 340px;
+    margin-left: -1px;
+  }
+  
+  .chef-text h1{
+    line-height: 40px;
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  
+  .chef-text p{
+    line-height: 20px;
+  }
+
+}
+
+@media (min-width: 1980px){
+  .about-shef, .statics{
+    width: 50%;
+  }
+
+  .recipes-container div{
+    width: 500px;
+  }
+
+  .recipes-container div p{
+    margin-right: 50px;
+  }
+
+}
 }

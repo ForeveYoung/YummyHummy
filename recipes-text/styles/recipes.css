@@ -92,6 +92,11 @@ body{
     font-weight: bold;
     padding-top: 0px;
   }
+
+  #footer{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   
   /* BUTTON LOGIC */
   #toggle {
