@@ -502,7 +502,7 @@ footer{
 
 
 
-@media(max-width: 1330px){
+@media(max-width: 1030px){
   .recipes-container{
     display: grid;
     grid-template-columns: 1fr;
@@ -514,7 +514,7 @@ footer{
   }
 }
 
-@media(max-width: 1000px){
+@media(max-width: 900px){
   .about-shef{
     box-sizing: border-box;
     width: 80%;
