@@ -1,20 +1,20 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-#background img{
+#main-background img {
   width: 100%;
   box-sizing: border-box;
 }
 
-a{
+a {
   color: black;
   text-decoration-line: none;
 }
 
-body{
+body {
   font-family: 'Courier New', Courier, monospace;
   overflow-x: hidden;
 }
@@ -24,16 +24,16 @@ body{
   src: url(fonts/LongCang-Regular.ttf); 
 }
 
-.nav{
+.nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr) ;
 }
 
-.nav a{
+.nav a {
   margin-left: 20px;
 }
 
-.navigation{
+.navigation {
   display: grid;
   grid-template-columns: 8fr 1fr 1fr 1fr;
   background: burlywood;
@@ -47,31 +47,31 @@ body{
   box-shadow: 0px 15px 24px -21px black; 
 }
 
-.navigation a{
+.navigation a {
   text-decoration: none;
   color: black;
   -webkit-transition: 2s ease;
   transition: all 0.5s ease-in-out;
 }
 
-.home, .recipes, .cont{
+.home, .recipes, .cont {
   font-weight: bold;
   padding-top: 10px;
 }
 
-.title{
+.title {
   font-size: xx-large;
 }
 
-#bg2 {
+#transition {
   height: 150px; 
   width: 100%;
   position: relative;
   margin-top: -70px;
 }
 
-#bg2:before, 
-#bg2:after {
+#transition::before, 
+#transition::after {
   content: "";
   height: 100%; 
   width: 50%;
@@ -80,30 +80,32 @@ body{
   background:white;
 }
 
-#bg2:before {
+#transition::before {
+  content: "";
   left: 0;
   transform: skew(0deg, 5deg);
 }
 
-#bg2:after {
+#transition::after {
+  content: "";
   right: 0;
   transform: skew(0deg, -5deg);
 }
 
-.res-title-box{
+.res-title-box {
   display: grid;
   justify-items: center;
   position: relative;
   z-index: 1;
 }
 
-.res-title{
+.res-title {
   font-weight: bolder;
   font-size: x-large;
   text-decoration-line: underline;
 }
 
-.recipes-container{
+.recipes-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 30px auto 0px auto;
@@ -111,7 +113,7 @@ body{
   width: 80%;
 }
 
-.recipes-container div{
+.recipes-container div {
   width: 400px;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -122,22 +124,21 @@ body{
   cursor: pointer;
 }
 
-.recipes-container img{
+.recipes-container img {
   width: 100px;
   height: 100px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%; 
-
 }
 
-.recipes-container div p{
+.recipes-container div p {
   font-size: larger;
   margin-top: 20px;
 }
 
-.about-shef{
+.about-shef {
   box-sizing: border-box;
   width: 80%;
   background-color: burlywood;;
@@ -149,27 +150,27 @@ body{
   box-shadow: 0px 15px 30px 15px rgba(0, 0, 0, 0.39); 
 }
 
-.about-shef img{
+.about-shef img {
   height: 500px;
 }
 
-.chef-text{
+.chef-text {
   width: 500px;
   margin-left: 50px;
   margin-top: 50px;
 }
 
-.chef-text h1{
+.chef-text h1 {
   line-height: 100px;
   font-size: 50px;
   letter-spacing: 3px;
 }
 
-.chef-text p{
+.chef-text p {
   line-height: 30px;
 }
 
-.statics{
+.statics {
   box-sizing: border-box;
   background-color: burlywood;;
   margin-bottom: 200px;
@@ -183,13 +184,13 @@ body{
   box-shadow: 0px 15px 30px 15px rgba(0, 0, 0, 0.39); 
 }
 
-.box{
+.statics-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-right: 20px;
 }
 
-.foods, .customers, .exp, .last{
+.foods, .customers, .exp, .last {
   box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.20); 
   background-color: rgb(238, 196, 142);
   margin: 30px;
@@ -198,30 +199,31 @@ body{
   justify-items: center;
 }
 
-.statics .number{
+.statics #foods-num, #customers-num, #exp-num, #last-num {
   font-weight: bolder;
   font-size: 40px;
   padding-top: 25px; 
 }
-.statics p{
+
+.statics p {
   letter-spacing: 0.3px;
   margin-top: -15px;
   text-align: center;
 }
 
-.statics img{
+.statics img {
   height: 450px;
 }
 
-#main-footer{
-    left: 0;
-    right: 0;
-    height: 200px;
-    background: rgb(0, 0, 0);
-    bottom: 0;
+#main-footer {
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: rgb(0, 0, 0);
+  bottom: 0;
 }
 
-footer{
+footer {
   background: black;
   color: azure;
   display: grid;
@@ -230,38 +232,38 @@ footer{
   width: 100%;
 }
 
-.footer-title{
+.footer-title {
   font-weight: bolder;
   font-size: larger;
   line-height: 50px;
 }
 
-.block1, .block2{
+.block1, .block2 {
   margin-left: 60px;
 }
 
-footer img{
+footer img {
   width: 15px;
 } 
 
-#toggle{
+#toggle {
   display: none;
 }
 
-.title-min{
+.title-min {
   display: none;
 }
 
-@media(max-width: 765px){
-  body{
+@media(max-width: 765px) {
+  body {
     overflow-x: hidden;
   }  
 
-  #bg2{
+  #transition {
     display: none;
   }
   
-.navigation{
+.navigation {
   height: 60px;
 }
 
@@ -269,34 +271,33 @@ a {
   text-decoration: none;
 }
 
-.nav a{
+.nav a {
   margin: 0px;
 }
 
-.title{
+.title {
   display: none;
 }
 
-.title-min{
+.title-min {
   display: block;
   font-size: 40px;
   margin-top: -10px;
 }
 
-.home, .recipes, .cont{
+.home, .recipes, .cont {
   font-weight: bold;
   padding-top: 0px;
 
 }
 
-footer{
+footer {
   display: grid;
   grid-template-columns: 1fr;
   box-sizing: border-box;
   width: 100%;
 }
 
-/* BUTTON LOGIC */
 #toggle {
   position: absolute;
   left: -100%;
@@ -371,7 +372,6 @@ footer{
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* BUTTON BURGER */
 .button-toggle {
   position: absolute;
   width: 20px;
@@ -404,12 +404,10 @@ footer{
   transform: translateY(-50%) rotate(-45deg) scale(0);
 }
 
-/* MENU */
 .nav {
   display: inline-block;
   pointer-events: none;
   transition: 0.5s;
-
 }
 
 .nav-item {
@@ -481,41 +479,39 @@ footer{
   transition: 0.5s;
 }
 
-.about-shef, .statics{
+.about-shef, .statics {
   display: grid;
   grid-template-columns: 1fr;
-
 }
 
-.sattics{
+.sattics {
   width: 100%;
 }
 
-.statics .number{
+.statics #foods-num, #customers-num, #exp-num, #last-num {
   font-size: 30px;
   line-height: 60px;
 }
 
-.statics p{
+.statics p {
   text-align: center;
 }
+}
 
-
-
-@media(max-width: 1030px){
+@media(max-width: 1030px) {
   .recipes-container{
     display: grid;
     grid-template-columns: 1fr;
   }
 
-  .recipes-container div{
+  .recipes-container div {
     width: 400px;
     padding: 20px 10px;
   }
 }
 
-@media(max-width: 900px){
-  .about-shef{
+@media(max-width: 900px) {
+  .about-shef {
     box-sizing: border-box;
     width: 80%;
     background-color: burlywood;;
@@ -526,50 +522,49 @@ footer{
     box-shadow: 0px 15px 30px 15px rgba(0, 0, 0, 0.39); 
   }
   
-  .about-shef img{
+  .about-shef img {
     height: 500px;
   }
   
-  .chef-text{
+  .chef-text {
     width: 500px;
     margin-left: 50px;
   }
   
-  .chef-text h1{
+  .chef-text h1 {
     line-height: 30px;
     font-size: 20px;
     letter-spacing: 3px;
   }
   
-  .chef-text p{
+  .chef-text p {
     line-height: 20px;
   }
 
-    .about-shef{
+  .about-shef {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr;
     width: 450px;
   }
   
-  .chef-text{
+  .chef-text {
     width: 340px;
     margin-left: -1px;
   }
   
-  .chef-text h1{
+  .chef-text h1 {
     line-height: 40px;
     font-size: 30px;
     letter-spacing: 3px;
   }
   
-  .chef-text p{
+  .chef-text p {
     line-height: 20px;
   }
-
 }
 
-@media (min-width: 1980px){
+@media (min-width: 1980px) {
   .about-shef, .statics{
     width: 50%;
   }
@@ -581,6 +576,4 @@ footer{
   .recipes-container div p{
     margin-right: 50px;
   }
-
-}
 }
